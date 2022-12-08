@@ -86,7 +86,7 @@ export const heroData: Hero = {
   actions: [
     {
       href: 'https://drive.google.com/uc?export=download&id=1N_JOU2vK0KoTxo6SA2c7FDlLfMtNeuDY',
-      text: 'Ver CV en PDF',
+      text: 'Descargar CV',
       primary: true,
       Icon: DownloadIcon,
     },

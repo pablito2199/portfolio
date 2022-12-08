@@ -1,4 +1,5 @@
 import {FC, memo, useCallback, useMemo, useState} from 'react';
+import emailjs from 'emailjs-com';
 
 interface FormData {
   name: string;
@@ -32,10 +33,10 @@ const ContactForm: FC = memo(() => {
   const handleSendMessage = useCallback(
     async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
-      /**
-       * This is a good starting point to wire up your form submission logic
-       * */
-      console.log('Data to send: ', data);
+
+          emailjs.sendForm('service_ifxis44','template_97ud84q',event.currentTarget,'z7lrWEIQz9Ydo1DGl').then(res=>{
+              alert('Mensaje enviado correctamente.')
+          })
     },
     [data],
   );
@@ -45,11 +46,12 @@ const ContactForm: FC = memo(() => {
 
   return (
     <form className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSendMessage}>
-      <input className={inputClasses} name="name" onChange={onChange} placeholder="Nombre" required type="text" />
+      <input className={inputClasses} name="nombre" id="nombre" onChange={onChange} placeholder="Nombre" required type="text" />
       <input
         autoComplete="email"
         className={inputClasses}
         name="email"
+        id="email"
         onChange={onChange}
         placeholder="Email"
         required
@@ -58,7 +60,8 @@ const ContactForm: FC = memo(() => {
       <textarea
         className={inputClasses}
         maxLength={250}
-        name="message"
+        name="mensaje"
+        id="mensaje"
         onChange={onChange}
         placeholder="Mensaje"
         required
