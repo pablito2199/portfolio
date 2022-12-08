@@ -34,7 +34,7 @@ const ContactForm: FC = memo(() => {
     async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
 
-          emailjs.sendForm('service_ifxis44','template_97ud84q',event.currentTarget,'z7lrWEIQz9Ydo1DGl').then(res=>{
+          emailjs.sendForm('service_ifxis44','template_97ud84q',event.currentTarget,'z7lrWEIQz9Ydo1DGl').then(()=>{
               alert('Mensaje enviado correctamente.')
           })
     },
