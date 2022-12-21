@@ -6,7 +6,7 @@ import {TimelineItem} from '../../../data/dataDef';
 const TimelineItem: FC<{item: TimelineItem}> = memo(({item}) => {
   const {title, date, location, content, image} = item;
   return (
-    <div className="flex flex-row pb-8 text-center last:pb-0 md:text-left ml-52">
+    <div className="flex flex-row pb-8 text-center last:pb-0 md:text-left md:ml-52">
       <div>
         {!!image && (
           <div className="col-span-1 flex justify-center md:justify-start">
