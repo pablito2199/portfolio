@@ -46,7 +46,13 @@
     "react/no-unescaped-entities": "off",
     "simple-import-sort/exports": "error",
     "simple-import-sort/imports": "error",
-    "sort-imports": "off",
+    "sort-imports": ["error", {
+      "ignoreCase": false,
+      "ignoreDeclarationSort": false,
+      "ignoreMemberSort": false,
+      "memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
+      "allowSeparatedGroups": false
+  }],
     "jsx-a11y/no-onchange": "off",
     "jsx-a11y/no-autofocus": "off",
     "@next/next/no-img-element": "off"
