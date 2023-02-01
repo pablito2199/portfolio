@@ -290,6 +290,7 @@ export const experience: TimelineItem[] = [
       <li>• Desarrollo full stack de aplicaciones web</li>
       <li>• Bases de datos relacionales OracleSQL</li>
       <li>• Empleo de capas ArcGIS</li>
+      <li>• Realización de tests unitarios con JUnit</li>
       <li>• Control de versiones mediante SVN</li>
       <li>• Integración continua con Jenkins</li>
       <li>• Servidor Tomcat</li>
