@@ -188,7 +188,7 @@ export const skills: SkillGroup[] = [
     name: 'Desarrollo de Backend',
     skills: [
       {
-        name: 'Spring Boot',
+        name: 'Spring Framework',
         level: 10,
       },
       {
