@@ -164,19 +164,19 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'JavaScript',
+        level: 10,
+      },
+      {
+        name: 'jQuery',
+        level: 10,
+      },
+      {
+        name: 'React',
         level: 9,
       },
       {
         name: 'HTML5 / CSS3 / Tailwind',
         level: 9,
-      },
-      {
-        name: 'React',
-        level: 8,
-      },
-      {
-        name: 'jQuery',
-        level: 8,
       },
       {
         name: 'Typescript',
@@ -189,15 +189,15 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'Spring Boot',
-        level: 9,
+        level: 10,
       },
       {
         name: 'Hibernate',
-        level: 9,
+        level: 10,
       },
       {
         name: 'REST API',
-        level: 9,
+        level: 10,
       }
     ],
   },
@@ -205,15 +205,15 @@ export const skills: SkillGroup[] = [
     name: 'Bases de datos',
     skills: [
       {
+        name: 'OracleSQL',
+        level: 10,
+      },
+      {
         name: 'PostgreSQL',
-        level: 9,
+        level: 10,
       },
       {
         name: 'MySQL',
-        level: 9,
-      },
-      {
-        name: 'OracleSQL',
         level: 9,
       },
       {
