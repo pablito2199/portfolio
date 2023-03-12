@@ -243,7 +243,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'Watch.it',
-    description: 'Red social temática elaborada durante las clases de Ingeniería de Servicios en la universidad. Se pueden crear usuarios y respectivas amistades, así como películar y valoraciones de estas.',
+    description: 'Red social temática elaborada durante las clases de Ingeniería de Servicios en la universidad. Se pueden crear usuarios y respectivas amistades, así como películas y valoraciones de estas.',
     url: 'https://github.com/pablito2199/Watch.it',
     image: porfolioWatchIt,
   },
