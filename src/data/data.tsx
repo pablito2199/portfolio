@@ -273,7 +273,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'Whatsapp Message Counter',
-    description: 'Este script te permite sabes el número de mensajes enviados por los miembros de un chat. Solo tienes que exportar la conversación a un archivo en formato .txt y ejecutar el script.',
+    description: 'Este script te permite saber el número de mensajes enviados por los miembros de un chat. Solo tienes que exportar la conversación a un archivo en formato .txt y ejecutar el script.',
     url: 'https://github.com/pablito2199/WhatsApp-Message-Counter',
     image: porfolioWhatsappCounter,
   },
