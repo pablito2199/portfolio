@@ -13,13 +13,14 @@ import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import heroImage from '../images/header-background.webp';
 import profilepic from '../images/profilepic.jpg';
+import porfolioWhatsappClone from '../images/portfolio/portfolio-WhatsappClone.png';
 import porfolioTFG from '../images/portfolio/portfolio-TFG.jpg';
 import porfolioWatchIt from '../images/portfolio/portfolio-WatchIt.png';
 import porfolioRedAmbulatorios from '../images/portfolio/portfolio-RedAmbulatorios.png';
 import porfolioMultinucleo from '../images/portfolio/portfolio-Multinucleo.png';
 import porfolioAsignacionTFG from '../images/portfolio/portfolio-AsignacionTFG.png';
 import porfolioMonopoly from '../images/portfolio/portfolio-Monopoly.png';
-import porfolioWhatsappCounter from '../images/portfolio/portfolio-WhatsappCounter.png';
+import porfolioWhatsappCounter from '../images/portfolio/portfolio-WhatsappCounter.jpg';
 import porfolioSeriesFormatter from '../images/portfolio/portfolio-SeriesFormatter.jpg';
 import resumeVexiza from '../images/resume/resume-Vexiza.jpg';
 import resumeBahia from '../images/resume/resume-Bahia.jpg';
@@ -112,7 +113,7 @@ function getEdad(dateString: string) {
   return edad.valueOf()
 }
 
-var edad = new String(getEdad("2000/12/27 00:00:00"))
+let edad = String(getEdad("2000/12/27 00:00:00"))
 
 /**
  * About section
@@ -228,6 +229,12 @@ export const skills: SkillGroup[] = [
  * Portfolio section
  */
 export const portfolioItems: PortfolioItem[] = [
+  {
+    title: 'Clon de WhatsApp',
+    description: 'Clon de WhatsApp implementado con React.js y Tailwind CSS.',
+    url: 'https://pablito2199-whatsapp.vercel.app/',
+    image: porfolioWhatsappClone,
+  },
   {
     title: 'Herramienta para la creación y edición colaborativa de documentos, TFG',
     description: 'Herramienta colaborativa para la creación y edición de documentos por parte de usuarios expertos en legislación a nivel gallego. Se trata de mi TFG, dirigido por personal del CiTIUS, donde se han utilizado tecnologías como React.js, Tailwind, Spring Boot, MongoDB, ...',
