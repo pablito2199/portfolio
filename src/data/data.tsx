@@ -231,7 +231,7 @@ export const skills: SkillGroup[] = [
 export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Clon de WhatsApp',
-    description: 'Clon de WhatsApp implementado con React.js y Tailwind CSS.',
+    description: 'El proyecto es un clon de la aplicación de WhatsApp web. Esta página utiliza ReactJS como framework principal. El proyecto se ha construido utilizando ReactJs, React Context API y React Router. También he utilizado TailwindCSS para estilizar el proyecto, y FontAwesome para los iconos. El proyecto se encuentra alojado en Vercel. implementado con React.js y Tailwind CSS.',
     url: 'https://pablito2199-whatsapp.vercel.app/',
     image: porfolioWhatsappClone,
   },
