@@ -12,22 +12,23 @@ import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import heroImage from '../images/header-background.webp';
-import profilepic from '../images/profilepic.jpg';
-import porfolioWhatsappClone from '../images/portfolio/portfolio-WhatsappClone.png';
-import porfolioTFG from '../images/portfolio/portfolio-TFG.jpg';
-import porfolioWatchIt from '../images/portfolio/portfolio-WatchIt.png';
-import porfolioRedAmbulatorios from '../images/portfolio/portfolio-RedAmbulatorios.png';
-import porfolioMultinucleo from '../images/portfolio/portfolio-Multinucleo.png';
 import porfolioAsignacionTFG from '../images/portfolio/portfolio-AsignacionTFG.png';
 import porfolioMonopoly from '../images/portfolio/portfolio-Monopoly.png';
-import porfolioWhatsappCounter from '../images/portfolio/portfolio-WhatsappCounter.jpg';
+import porfolioMultinucleo from '../images/portfolio/portfolio-Multinucleo.png';
+import porfolioRedAmbulatorios from '../images/portfolio/portfolio-RedAmbulatorios.png';
 import porfolioSeriesFormatter from '../images/portfolio/portfolio-SeriesFormatter.jpg';
-import resumeVexiza from '../images/resume/resume-Vexiza.jpg';
+import porfolioTFG from '../images/portfolio/portfolio-TFG.jpg';
+import porfolioWatchIt from '../images/portfolio/portfolio-WatchIt.png';
+import porfolioWhatsappClone from '../images/portfolio/portfolio-WhatsappClone.png';
+import porfolioWhatsappCounter from '../images/portfolio/portfolio-WhatsappCounter.jpg';
+import profilepic from '../images/profilepic.jpg';
 import resumeBahia from '../images/resume/resume-Bahia.jpg';
-import resumeUSC from '../images/resume/resume-USC.jpg';
-import resumeOllosGrandes from '../images/resume/resume-OllosGrandes.png';
-import resumeDGT from '../images/resume/resume-DGT.jpg';
 import resumeCambridge from '../images/resume/resume-Cambridge.jpg';
+import resumeDGT from '../images/resume/resume-DGT.jpg';
+import resumeOllosGrandes from '../images/resume/resume-OllosGrandes.png';
+import resumeUdemy from '../images/resume/resume-Udemy.png';
+import resumeUSC from '../images/resume/resume-USC.jpg';
+import resumeVexiza from '../images/resume/resume-Vexiza.jpg';
 import resumeXunta from '../images/resume/resume-Xunta.png';
 import {
   About,
@@ -73,7 +74,7 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Soy Pablo, un <strong className="text-stone-100">Desarrollador web Full Stack</strong>, actualmente
+        Soy Pablo, un <strong className="text-stone-100">desarrollador web full stack</strong>, actualmente
         trabajando en <strong className="text-stone-100">Vexiza S.L.</strong> ayudando en el desarrollo de una
         aplicación para la gestión del medio rural en Galicia.
       </p>
@@ -127,7 +128,7 @@ export const aboutData: About = {
     {label: 'Nacionalidad', text: 'Española', Icon: FlagIcon},
     {label: 'Intereses', text: 'Automovilismo, baloncesto, videojuegos...', Icon: SparklesIcon},
     {label: 'Educación', text: 'Universidade de Santiago de Compostela', Icon: AcademicCapIcon},
-    {label: 'Empleo', text: 'Desarrollador junior en Vexiza S.L.', Icon: OfficeBuildingIcon},
+    {label: 'Empleo', text: 'Desarrollador full stack en Vexiza S.L.', Icon: OfficeBuildingIcon},
   ],
 };
 
@@ -214,11 +215,11 @@ export const skills: SkillGroup[] = [
         level: 10,
       },
       {
-        name: 'MySQL',
-        level: 9,
+        name: 'MongoDB',
+        level: 10,
       },
       {
-        name: 'MongoDB',
+        name: 'MySQL',
         level: 9,
       }
     ],
@@ -291,24 +292,29 @@ export const portfolioItems: PortfolioItem[] = [
 export const experience: TimelineItem[] = [
   {
     date: 'Octubre 2022 - Presente',
+    time: '',
     location: 'Vexiza S.L.',
-    title: 'Desarrollador junior',
+    title: 'Desarrollador FullStack',
     content: <ul className="ml-8">
       <li>• Desarrollo full stack de aplicaciones web</li>
       <li>• Bases de datos relacionales OracleSQL</li>
       <li>• Empleo de capas ArcGIS</li>
+      <li>• Desarrollo de integraciones con otras aplicaciones web</li>
       <li>• Realización de tests unitarios con JUnit</li>
       <li>• Control de versiones mediante SVN</li>
       <li>• Integración continua con Jenkins</li>
       <li>• Servidor Tomcat</li>
-      <li>• Ingeniería de software (Redmine, Agile)</li>
+      <li>• Ingeniería de software (Redmine, Agile, Scrum)</li>
       <li>• Utilización de herramientas de ticketing</li>
       <li>• Programación para la gestión de medios rurales</li>
     </ul>,
-    image: resumeVexiza
+    image: resumeVexiza,
+    credencial: '',
+    url: 'https://www.vexiza.com/'
   },
   {
     date: 'Julio 2021 - Agosto 2021',
+    time: '(2 meses)',
     location: 'Bahía Software',
     title: 'Desarrollador de Backend - en prácticas',
     content: <ul className="ml-8">
@@ -318,13 +324,16 @@ export const experience: TimelineItem[] = [
       <li>• Ingeniería de software (JiraSoftware, Agile)</li>
       <li>• Programación en entornos sanitarios</li>
     </ul>,
-    image: resumeBahia
+    image: resumeBahia,
+    credencial: '',
+    url: 'https://bahiasoftware.es/home'
   },
 ];
 
 export const education: TimelineItem[] = [
   {
     date: 'Septiembre 2018 - Septiembre 2022',
+    time: '',
     location: 'Universidade de Santiago de Compostela',
     title: 'Grado en Ingeniería Informática',
     content: <div className="ml-4">
@@ -347,45 +356,85 @@ export const education: TimelineItem[] = [
         <li>• Computación en la nube (AWS Educate)</li>
       </ul>
     </div>,
-    image: resumeUSC
+    image: resumeUSC,
+    credencial: '',
+    url: 'https://www.usc.gal/es/estudios/grados/ingenieria-arquitectura/grado-ingenieria-informatica-2aedicion'
   },
   {
     date: 'Septiembre 2016 - Mayo 2018',
+    time: '',
     location: 'I.E.S. Nosa Señora dos Ollos Grandes',
     title: 'Bachillerato de Ciencias Tecnológicas',
     content: <p></p>,
-    image: resumeOllosGrandes
+    image: resumeOllosGrandes,
+    credencial: '',
+    url: 'http://www.edu.xunta.gal/centros/iesollosgrandes/'
   },
 ];
 
 export const certificaciones: TimelineItem[] = [
   {
     date: 'Expedición oct. 2019 · Vencimiento: oct. 2029',
+    time: '',
     location: 'Dirección General de Tráfico',
     title: 'Permiso de Conducir (Clase B)',
     content: <p></p>,
-    image: resumeDGT
+    image: resumeDGT,
+    credencial: '',
+    url: 'https://sede.dgt.gob.es/es/permisos-de-conducir/obtencion-renovacion-duplicados-permiso/permiso-conducir/examen-maniobras/permiso-b.shtml'
   },
   {
     date: 'Expedición: jul. 2017 · Sin fecha de vencimiento',
+    time: '',
     location: 'Cambridge University Press & Assessment English',
     title: 'B2 First Certificate in English (FCE)',
     content: <p></p>,
-    image: resumeCambridge
+    image: resumeCambridge,
+    credencial: '',
+    url: 'https://www.cambridgeenglish.org/es/exams-and-tests/first/'
   },
   {
     date: 'Expedición: dic. 2014 · Sin fecha de vencimiento',
+    time: '',
     location: 'Cambridge University Press & Assessment English',
     title: 'B1 Preliminary (PET)',
     content: <p></p>,
-    image: resumeCambridge
+    image: resumeCambridge,
+    credencial: '',
+    url: 'https://www.cambridgeenglish.org/es/exams-and-tests/preliminary/'
   },
   {
     date: 'Expedición: jun. 2018 · Sin fecha de vencimiento',
+    time: '',
     location: 'Xunta de Galicia',
     title: 'CELGA 4',
     content: <p></p>,
-    image: resumeXunta
+    image: resumeXunta,
+    credencial: '',
+    url: 'https://www.lingua.gal/o-galego/aprendelo/celga-4/validacion'
+  }
+];
+
+export const cursos: TimelineItem[] = [
+  {
+    date: '2023',
+    time: '(13.5 horas)',
+    location: 'Udemy',
+    title: 'Curso Completo de Bases de datos MongoDB y NoSQL',
+    content: <p></p>,
+    image: resumeUdemy,
+    credencial: 'UC-09cc0:28-13e1-4eld-.a80-60b1B0dec946',
+    url: 'https://www.udemy.com/course/curso-completo-de-bases-de-datos-mongodb-y-nosql/'
+  },
+  {
+    date: '2018',
+    time: '(31 horas), Nota: 9.7/10',
+    location: 'Universidade de Santiago de Compostela',
+    title: 'Curso de Competencias en Información (Básico)',
+    content: <p></p>,
+    image: resumeUSC,
+    credencial: 'BUSC.1819.41',
+    url: 'https://rebusca.usc.gal/guia-curso-competencias-basico/informacion'
   }
 ];
 

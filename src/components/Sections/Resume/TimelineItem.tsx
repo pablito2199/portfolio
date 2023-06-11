@@ -1,12 +1,12 @@
-import {FC, memo} from 'react';
 import Image from 'next/image';
+import { FC, memo } from 'react';
 
-import {TimelineItem} from '../../../data/dataDef';
+import { TimelineItem } from '../../../data/dataDef';
 
 const TimelineItem: FC<{item: TimelineItem}> = memo(({item}) => {
-  const {title, date, location, content, image} = item;
+  const {title, date, location, content, image, time, credencial, url} = item;
   return (
-    <div className="flex flex-row pb-8 text-center last:pb-0 md:text-left md:ml-52">
+    <a className="flex flex-row pb-8 text-center last:pb-0 md:text-left md:ml-52" href={url} target="_blank">
       <div>
         {!!image && (
           <div className="col-span-1 flex justify-center md:justify-start">
@@ -22,12 +22,20 @@ const TimelineItem: FC<{item: TimelineItem}> = memo(({item}) => {
           <div className="flex items-center justify-center gap-x-2 md:justify-start">
             <span className="flex-1 text-sm font-medium italic sm:flex-none">{location}</span>
             <span>•</span>
-            <span className="flex-1 text-sm sm:flex-none">{date}</span>
+            <span className="flex-1 text-sm sm:flex-none">{date} <i>{time}</i></span>
           </div>
+            {
+              credencial !== '' && (
+                <div className="flex items-center justify-center gap-x-2 md:justify-start">
+                <span className="flex-1 text-sm font-medium sm:flex-none">Id de la credencial: </span>
+                  <span className="flex-1 text-sm sm:flex-none">{credencial}</span>
+                </div>
+              )
+            }
         </div>
         {content}
       </div>
-    </div>
+    </a>
   );
 });
 

@@ -1,7 +1,7 @@
-import {StaticImageData} from 'next/image';
-import {FC, SVGProps} from 'react';
+import { StaticImageData } from 'next/image';
+import { FC, SVGProps } from 'react';
 
-import {IconProps} from '../components/Icon/Icon';
+import { IconProps } from '../components/Icon/Icon';
 
 export interface HomepageMeta {
   title: string;
@@ -92,6 +92,9 @@ export interface TimelineItem {
   title: string;
   image: string;
   content: JSX.Element;
+  time: string;
+  credencial: string;
+  url: string;
 }
 
 /**
