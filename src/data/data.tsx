@@ -423,8 +423,8 @@ export const cursos: TimelineItem[] = [
     title: 'Curso Completo de Bases de datos MongoDB y NoSQL',
     content: <p></p>,
     image: resumeUdemy,
-    credencial: 'UC-09cc0:28-13e1-4eld-.a80-60b1B0dec946',
-    url: 'https://www.udemy.com/course/curso-completo-de-bases-de-datos-mongodb-y-nosql/'
+    credencial: 'UC-d9cc0c28-13a1-4e1d-aa80-69b180dec946',
+    url: 'https://www.udemy.com/certificate/UC-d9cc0c28-13a1-4e1d-aa80-69b180dec946/'
   },
   {
     date: '2018',
