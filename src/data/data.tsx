@@ -1,11 +1,11 @@
 import {
-  AcademicCapIcon,
-  CalendarIcon,
-  DownloadIcon,
-  FlagIcon,
-  MapIcon,
-  OfficeBuildingIcon,
-  SparklesIcon,
+    AcademicCapIcon,
+    CalendarIcon,
+    DownloadIcon,
+    FlagIcon,
+    MapIcon,
+    OfficeBuildingIcon,
+    SparklesIcon,
 } from '@heroicons/react/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
@@ -13,6 +13,7 @@ import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioAsignacionTFG from '../images/portfolio/portfolio-AsignacionTFG.png';
+import portfolioFindACoach from '../images/portfolio/portfolio-FindACoach.jpg';
 import porfolioMonopoly from '../images/portfolio/portfolio-Monopoly.png';
 import porfolioMultinucleo from '../images/portfolio/portfolio-Multinucleo.png';
 import porfolioRedAmbulatorios from '../images/portfolio/portfolio-RedAmbulatorios.png';
@@ -31,15 +32,15 @@ import resumeUSC from '../images/resume/resume-USC.jpg';
 import resumeVexiza from '../images/resume/resume-Vexiza.jpg';
 import resumeXunta from '../images/resume/resume-Xunta.png';
 import {
-  About,
-  ContactSection,
-  ContactType,
-  Hero,
-  HomepageMeta,
-  PortfolioItem,
-  SkillGroup,
-  Social,
-  TimelineItem,
+    About,
+    ContactSection,
+    ContactType,
+    Hero,
+    HomepageMeta,
+    PortfolioItem,
+    SkillGroup,
+    Social,
+    TimelineItem,
 } from './dataDef';
 
 /**
@@ -74,8 +75,8 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Soy Pablo, un <strong className="text-stone-100">desarrollador web full stack</strong>, actualmente
-        trabajando en <strong className="text-stone-100">Vexiza S.L.</strong> ayudando en el desarrollo de una
+        Soy Pablo, un <strong className="text-stone-100">Desarrollador FullStack</strong>, actualmente
+        trabajando en <strong className="text-stone-100">Vexiza S.L.</strong> colaborando en el desarrollo de una
         aplicación para la gestión del medio rural en Galicia.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
@@ -128,7 +129,7 @@ export const aboutData: About = {
     {label: 'Nacionalidad', text: 'Española', Icon: FlagIcon},
     {label: 'Intereses', text: 'Automovilismo, baloncesto, videojuegos...', Icon: SparklesIcon},
     {label: 'Educación', text: 'Universidade de Santiago de Compostela', Icon: AcademicCapIcon},
-    {label: 'Empleo', text: 'Desarrollador full stack en Vexiza S.L.', Icon: OfficeBuildingIcon},
+    {label: 'Empleo', text: 'Desarrollador FullStack en Vexiza S.L.', Icon: OfficeBuildingIcon},
   ],
 };
 
@@ -165,11 +166,7 @@ export const skills: SkillGroup[] = [
     name: 'Desarrollo de Frontend',
     skills: [
       {
-        name: 'JavaScript',
-        level: 10,
-      },
-      {
-        name: 'jQuery',
+        name: 'JavaScript / jQuery',
         level: 10,
       },
       {
@@ -177,11 +174,15 @@ export const skills: SkillGroup[] = [
         level: 9,
       },
       {
+        name: 'Vue',
+        level: 9,
+      },
+      {
         name: 'HTML5 / CSS3 / Tailwind',
         level: 9,
       },
       {
-        name: 'Typescript',
+        name: 'TypeScript',
         level: 7,
       }
     ],
@@ -249,6 +250,12 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioWatchIt,
   },
   {
+    title: 'Find a coach',
+    description: 'Aplicación que permite el registro/inicio de sesión de usuarios, registrar entrenadores, filtrar entrenadores, enviar solicitudes de contacto y ver solicitudes de contacto personales. Se ha realizado con Vue 3 y Vuex, utilizando Firebase como base de datos y autenticación.',
+    url: 'https://pablito2199-find-a-coach.vercel.app/',
+    image: portfolioFindACoach,
+  },
+  {
     title: 'Gestión de una red de ambulatorios',
     description: 'Aplicación de gestión de una base de datos de un ambulatorio para la asignatura de BDII del GrEI de la USC.',
     url: 'https://github.com/pablito2199/BDII-Ambulatorioe',
@@ -295,19 +302,13 @@ export const experience: TimelineItem[] = [
     time: '',
     location: 'Vexiza S.L.',
     title: 'Desarrollador FullStack',
-    content: <ul className="ml-8">
-      <li>• Desarrollo full stack de aplicaciones web</li>
-      <li>• Bases de datos relacionales OracleSQL</li>
-      <li>• Empleo de capas ArcGIS</li>
-      <li>• Desarrollo de integraciones con otras aplicaciones web</li>
-      <li>• Realización de tests unitarios con JUnit</li>
-      <li>• Control de versiones mediante SVN</li>
-      <li>• Integración continua con Jenkins</li>
-      <li>• Servidor Tomcat</li>
-      <li>• Ingeniería de software (Redmine, Agile, Scrum)</li>
-      <li>• Utilización de herramientas de ticketing</li>
-      <li>• Programación para la gestión de medios rurales</li>
-    </ul>,
+    content: <div>
+        <p>Desarrollo de TERREC, una aplicación destinada a la AMTEGA para la gestión del parcelario a nivel gallego. El objetivo ha sido unificar en una misma aplicación la gestión de aldeas modelo, polígonos agroforestales, investigaciones de titularidad, etc. La gestión de estas incluye la visión y modificación en mapa mediante capas y servicios GIS.</p>
+        <br/>
+        <p>En cuanto a tecnologías, se ha utilizado SpringBoot con una base de datos OracleSQL en el backend, y jQuery/JavaScript para el frontend, utilizando ArcGis para el control de GIS. Además, se han realizado despliegues de forma autónoma en Jenkins y se ha trabajado con JUnit para realizar tests. Con respecto a control de versiones, se ha utilizado SVN.</p>
+        <br/>
+        <p>En esta aplicación también se han realizado integraciones con otras APIs, como las de Catastro, ARPAD, Notifica.gal, PortaSinaturas o Sede electrónica de la Xunta.</p>
+    </div>,
     image: resumeVexiza,
     credencial: '',
     url: 'https://www.vexiza.com/'
@@ -416,26 +417,36 @@ export const certificaciones: TimelineItem[] = [
 ];
 
 export const cursos: TimelineItem[] = [
-  {
-    date: '2023',
-    time: '(13.5 horas)',
-    location: 'Udemy',
-    title: 'Curso Completo de Bases de datos MongoDB y NoSQL',
-    content: <p></p>,
-    image: resumeUdemy,
-    credencial: 'UC-d9cc0c28-13a1-4e1d-aa80-69b180dec946',
-    url: 'https://www.udemy.com/certificate/UC-d9cc0c28-13a1-4e1d-aa80-69b180dec946/'
-  },
-  {
-    date: '2018',
-    time: '(31 horas), Nota: 9.7/10',
-    location: 'Universidade de Santiago de Compostela',
-    title: 'Curso de Competencias en Información (Básico)',
-    content: <p></p>,
-    image: resumeUSC,
-    credencial: 'BUSC.1819.41',
-    url: 'https://rebusca.usc.gal/guia-curso-competencias-basico/informacion'
-  }
+    {
+        date: '2023',
+        time: '(32 horas)',
+        location: 'Udemy',
+        title: 'Vue - The Complete Guide (incl. Router & Composition API)',
+        content: <p></p>,
+        image: resumeUdemy,
+        credencial: 'UC-4a97ea3d-fba4-4621-b4ae-e33b3cfff9c2',
+        url: 'https://www.udemy.com/certificate/UC-4a97ea3d-fba4-4621-b4ae-e33b3cfff9c2/'
+    },
+    {
+        date: '2023',
+        time: '(13.5 horas)',
+        location: 'Udemy',
+        title: 'Curso Completo de Bases de datos MongoDB y NoSQL',
+        content: <p></p>,
+        image: resumeUdemy,
+        credencial: 'UC-d9cc0c28-13a1-4e1d-aa80-69b180dec946',
+        url: 'https://www.udemy.com/certificate/UC-d9cc0c28-13a1-4e1d-aa80-69b180dec946/'
+    },
+    {
+        date: '2018',
+        time: '(31 horas), Nota: 9.7/10',
+        location: 'Universidade de Santiago de Compostela',
+        title: 'Curso de Competencias en Información (Básico)',
+        content: <p></p>,
+        image: resumeUSC,
+        credencial: 'BUSC.1819.41',
+        url: 'https://rebusca.usc.gal/guia-curso-competencias-basico/informacion'
+    }
 ];
 
 /**
