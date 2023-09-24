@@ -318,13 +318,11 @@ export const experience: TimelineItem[] = [
     time: '(2 meses)',
     location: 'Bahía Software',
     title: 'Desarrollador de Backend - en prácticas',
-    content: <ul className="ml-8">
-      <li>• Desarrollo backend (MirthConnect)</li>
-      <li>• Estructuras de datos como HL7 FHIR</li>
-      <li>• Base de datos MySQL</li>
-      <li>• Ingeniería de software (JiraSoftware, Agile)</li>
-      <li>• Programación en entornos sanitarios</li>
-    </ul>,
+    content: <div>
+        <p>El proyecto en el que se ha colaborado recibe el nombre de INQUI, un proyecto encargado de la monitorización de los procesos informáticos (tales como el HIS – Sistema de Información Hospitalario, LIS – Sistema de Información de Laboratorio, etc.) de los hospitales de Quirón Salud.</p>
+        <br/>
+        <p>De esta forma, me he podido familiarizar con el entorno Mirth Connect y la mensajería HL7 en un entorno de tipo sanitario. Las labores realizadas han sido en backend, gestionando también una base de datos de tipo MySQL. En cuanto a ingeniería de software, se ha utilizado una metodología Agile y Scrum.</p>
+    </div>,
     image: resumeBahia,
     credencial: '',
     url: 'https://bahiasoftware.es/home'
