@@ -6,10 +6,10 @@ import { TimelineItem } from '../../../data/dataDef';
 const TimelineItem: FC<{item: TimelineItem}> = memo(({item}) => {
   const {title, date, location, content, image, time, credencial, url} = item;
   return (
-    <a className="flex flex-row pb-8 text-center last:pb-0 md:text-left md:ml-52 hover:bg-slate-200 rounded p-2" href={url} target="_blank">
+    <a className="flex flex-row pb-8 text-center last:pb-0 md:text-left hover:bg-slate-200 rounded-xl p-2 border-2 m-2" href={url} target="_blank">
       <div>
         {!!image && (
-          <div className="col-span-1 flex justify-center md:justify-start">
+          <div className="col-span-1 flex justify-center md:justify-start p-2">
             <div className="relative h-24 w-24 overflow-hidden rounded-xl md:h-32 md:w-32 border-2 border-green-500">
               <Image alt="location" layout="fill" objectFit="cover" src={image} />
             </div>
