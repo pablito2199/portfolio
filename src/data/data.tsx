@@ -75,7 +75,7 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Soy Pablo, un <strong className="text-stone-100">Desarrollador FullStack</strong>, actualmente
+        Soy Pablo, graduado en <strong className="text-stone-100">Ingeniería Informática</strong> y actualmente
         trabajando en <strong className="text-stone-100">Vexiza S.L.</strong> colaborando en el desarrollo de 
         aplicaciones para la gestión del medio rural en Galicia.
       </p>
