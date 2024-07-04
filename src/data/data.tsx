@@ -76,11 +76,11 @@ export const heroData: Hero = {
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         Soy Pablo, un <strong className="text-stone-100">Desarrollador FullStack</strong>, actualmente
-        trabajando en <strong className="text-stone-100">Vexiza S.L.</strong> colaborando en el desarrollo de una
-        aplicación para la gestión del medio rural en Galicia.
+        trabajando en <strong className="text-stone-100">Vexiza S.L.</strong> colaborando en el desarrollo de 
+        aplicaciones para la gestión del medio rural en Galicia.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        En mi tiempo libre me gusta ver <strong className="text-stone-100">baloncesto</strong> y <strong className="text-stone-100">F1</strong>,
+        En mi tiempo libre me gusta <strong className="text-stone-100">socializar</strong>, ver <strong className="text-stone-100">baloncesto</strong> y <strong className="text-stone-100">F1</strong>,
         escuchar <strong className="text-stone-100">música</strong>, <strong className="text-stone-100">viajar</strong> y
         hacer <strong className="text-stone-100">deporte</strong>.
       </p>
@@ -129,7 +129,7 @@ export const aboutData: About = {
     {label: 'Nacionalidad', text: 'Española', Icon: FlagIcon},
     {label: 'Intereses', text: 'Automovilismo, baloncesto, videojuegos...', Icon: SparklesIcon},
     {label: 'Educación', text: 'Universidade de Santiago de Compostela', Icon: AcademicCapIcon},
-    {label: 'Empleo', text: 'Desarrollador FullStack en Vexiza S.L.', Icon: OfficeBuildingIcon},
+    {label: 'Empleo', text: 'Líder técnico en Vexiza S.L.', Icon: OfficeBuildingIcon},
   ],
 };
 
