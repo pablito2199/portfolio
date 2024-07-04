@@ -301,13 +301,15 @@ export const experience: TimelineItem[] = [
     date: 'Octubre 2022 - Presente',
     time: '',
     location: 'Vexiza S.L.',
-    title: 'Desarrollador FullStack',
+    title: 'Líder técnico, analista/programador (Octubre 2023 - Presente) - Desarrollador FullStack (Marzo 2023 - Septiembre 2023) - Desarrollador Junior (Octubre 2022 - Febrero 2023)',
     content: <div>
-        <p>Desarrollo de TERREC, una aplicación destinada a la AMTEGA para la gestión del parcelario a nivel gallego. El objetivo ha sido unificar en una misma aplicación la gestión de aldeas modelo, polígonos agroforestales, investigaciones de titularidad, etc. La gestión de estas incluye la visión y modificación en mapa mediante capas y servicios GIS.</p>
+        <p>En mi etapa como desarrollador Junior y Fullstack participé en el desarrollo de TERREC, una aplicación destinada a la AMTEGA para la gestión del parcelario a nivel gallego. El objetivo ha sido unificar en una misma aplicación la gestión de aldeas modelo, polígonos agroforestales, investigaciones de titularidad, etc. La gestión de estas incluye la visión y modificación en mapa mediante capas y servicios GIS.</p>
         <br/>
         <p>En cuanto a tecnologías, se ha utilizado SpringBoot con una base de datos OracleSQL en el backend, y jQuery/JavaScript para el frontend, utilizando ArcGis para el control de GIS. Además, se han realizado despliegues de forma autónoma en Jenkins y se ha trabajado con JUnit para realizar tests. Con respecto a control de versiones, se ha utilizado SVN.</p>
         <br/>
         <p>En esta aplicación también se han realizado integraciones con otras APIs, como las de Catastro, ARPAD, Notifica.gal, PortaSinaturas o Sede electrónica de la Xunta.</p>
+        <br/>
+        <p>Una vez accedo al puesto de líder técnico me encargo de la dirección desde la parte técnica de dos proyectos: TERREC y XALEA, un proyecto heredado debido a haber ganado una licitación. Este último se encarga de gestionar el reparto de ayudas LEADER en los Grupos de Desarrollo Rural junto con Agader. Además de todos los puntos que he tocado en la aplicación de TERREC, destaco la evolución en este proyecto de cara al uso de buenas prácticas, análisis de riesgos, gestión de tareas dentro del equipo y las múltiples reuniones establecidas con el cliente con el fin de obtención de datos para el desarrollo de la aplicación.</p>
     </div>,
     image: resumeVexiza,
     credencial: '',
