@@ -303,7 +303,7 @@ export const experience: TimelineItem[] = [
     location: 'Vexiza S.L.',
     title: 'Líder técnico - Analista/Programador - Desarrollador FullStack',
     content: <div>
-        <p>En mi etapa como desarrollador Junior y Fullstack participé en el desarrollo de TERREC, una aplicación destinada a la AMTEGA para la gestión del parcelario a nivel gallego. El objetivo ha sido unificar en una misma aplicación la gestión de aldeas modelo, polígonos agroforestales, investigaciones de titularidad, etc. La gestión de estas incluye la visión y modificación en mapa mediante capas y servicios GIS.</p>
+        <p>En mi etapa como desarrollador Junior y FullStack participé en el desarrollo de TERREC, una aplicación destinada a la AMTEGA para la gestión del parcelario a nivel gallego. El objetivo ha sido unificar en una misma aplicación la gestión de aldeas modelo, polígonos agroforestales, investigaciones de titularidad, etc. La gestión de estas incluye la visión y modificación en mapa mediante capas y servicios GIS.</p>
         <br/>
         <p>En cuanto a tecnologías, se ha utilizado SpringBoot con una base de datos OracleSQL en el backend, y jQuery/JavaScript para el frontend, utilizando ArcGis para el control de GIS. Además, se han realizado despliegues de forma autónoma en Jenkins y se ha trabajado con JUnit para realizar tests. Con respecto a control de versiones, se ha utilizado SVN.</p>
         <br/>
