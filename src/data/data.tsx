@@ -301,7 +301,7 @@ export const experience: TimelineItem[] = [
     date: 'Octubre 2022 - Presente',
     time: '',
     location: 'Vexiza S.L.',
-    title: 'Líder técnico, analista/programador (Octubre 2023 - Presente) - Desarrollador FullStack (Marzo 2023 - Septiembre 2023) - Desarrollador Junior (Octubre 2022 - Febrero 2023)',
+    title: 'Líder técnico - Analista/Programador - Desarrollador FullStack',
     content: <div>
         <p>En mi etapa como desarrollador Junior y Fullstack participé en el desarrollo de TERREC, una aplicación destinada a la AMTEGA para la gestión del parcelario a nivel gallego. El objetivo ha sido unificar en una misma aplicación la gestión de aldeas modelo, polígonos agroforestales, investigaciones de titularidad, etc. La gestión de estas incluye la visión y modificación en mapa mediante capas y servicios GIS.</p>
         <br/>
