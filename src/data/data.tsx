@@ -124,7 +124,7 @@ export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `Ingeniero informático especialmente interesado en tecnologías web como React.js y Spring Boot. En mi tiempo libre me gusta socializar, ver deporte, viajar, escuchar música y jugar a videojuegos.`,
   aboutItems: [
-    {label: 'Localización', text: 'Lugo, España', Icon: MapIcon},
+    {label: 'Localización', text: 'Santiago de Compostela, España', Icon: MapIcon},
     {label: 'Edad', text: edad, Icon: CalendarIcon},
     {label: 'Nacionalidad', text: 'Española', Icon: FlagIcon},
     {label: 'Intereses', text: 'Automovilismo, baloncesto, videojuegos...', Icon: SparklesIcon},
