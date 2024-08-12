@@ -464,7 +464,7 @@ export const contact: ContactSection = {
     },
     {
       type: ContactType.Location,
-      text: 'Lugo, España',
+      text: 'Santiago de Compostela, España',
       href: 'https://www.google.es/maps/place/Lugo/@43.0123137,-7.5740097,14z/data=!3m1!4b1!4m5!3m4!1s0xd31ce80b130876d:0x1f305fbf2867050c!8m2!3d43.0097384!4d-7.5567582',
     },
     {
