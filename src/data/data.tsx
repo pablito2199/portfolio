@@ -1,11 +1,11 @@
 import {
-    AcademicCapIcon,
-    CalendarIcon,
-    DownloadIcon,
-    FlagIcon,
-    MapIcon,
-    OfficeBuildingIcon,
-    SparklesIcon,
+  AcademicCapIcon,
+  CalendarIcon,
+  DownloadIcon,
+  FlagIcon,
+  MapIcon,
+  OfficeBuildingIcon,
+  SparklesIcon,
 } from '@heroicons/react/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
@@ -27,20 +27,21 @@ import resumeBahia from '../images/resume/resume-Bahia.jpg';
 import resumeCambridge from '../images/resume/resume-Cambridge.jpg';
 import resumeDGT from '../images/resume/resume-DGT.jpg';
 import resumeOllosGrandes from '../images/resume/resume-OllosGrandes.png';
+import resumeScrumManager from '../images/resume/resume-ScrumManager.jpg';
 import resumeUdemy from '../images/resume/resume-Udemy.png';
 import resumeUSC from '../images/resume/resume-USC.jpg';
 import resumeVexiza from '../images/resume/resume-Vexiza.jpg';
 import resumeXunta from '../images/resume/resume-Xunta.png';
 import {
-    About,
-    ContactSection,
-    ContactType,
-    Hero,
-    HomepageMeta,
-    PortfolioItem,
-    SkillGroup,
-    Social,
-    TimelineItem,
+  About,
+  ContactSection,
+  ContactType,
+  Hero,
+  HomepageMeta,
+  PortfolioItem,
+  SkillGroup,
+  Social,
+  TimelineItem,
 } from './dataDef';
 
 /**
@@ -48,7 +49,7 @@ import {
  */
 export const homePageMeta: HomepageMeta = {
   title: 'Pablo Tarrío Otero',
-  description: "Página realizada con el fin de tener mi CV actualizado en todo momento.",
+  description: 'Página realizada con el fin de tener mi CV actualizado en todo momento.',
 };
 
 /**
@@ -76,13 +77,14 @@ export const heroData: Hero = {
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         Soy Pablo, graduado en <strong className="text-stone-100">Ingeniería Informática</strong> y actualmente
-        trabajando en <strong className="text-stone-100">Vexiza S.L.</strong> colaborando en el desarrollo de 
+        trabajando en <strong className="text-stone-100">Vexiza S.L.</strong> colaborando en el desarrollo de
         aplicaciones para la gestión del medio rural en Galicia.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        En mi tiempo libre me gusta <strong className="text-stone-100">socializar</strong>, ver <strong className="text-stone-100">baloncesto</strong> y <strong className="text-stone-100">F1</strong>,
-        escuchar <strong className="text-stone-100">música</strong>, <strong className="text-stone-100">viajar</strong> y
-        hacer <strong className="text-stone-100">deporte</strong>.
+        En mi tiempo libre me gusta <strong className="text-stone-100">socializar</strong>, ver{' '}
+        <strong className="text-stone-100">baloncesto</strong> y <strong className="text-stone-100">F1</strong>,
+        escuchar <strong className="text-stone-100">música</strong>, <strong className="text-stone-100">viajar</strong>{' '}
+        y hacer <strong className="text-stone-100">deporte</strong>.
       </p>
     </>
   ),
@@ -102,20 +104,17 @@ export const heroData: Hero = {
 };
 
 function getEdad(dateString: string) {
-  let hoy = new Date()
-  let fechaNacimiento = new Date(dateString)
-  let edad = hoy.getFullYear() - fechaNacimiento.getFullYear()
-  let diferenciaMeses = hoy.getMonth() - fechaNacimiento.getMonth()
-  if (
-    diferenciaMeses < 0 ||
-    (diferenciaMeses === 0 && hoy.getDate() < fechaNacimiento.getDate())
-  ) {
-    edad--
+  let hoy = new Date();
+  let fechaNacimiento = new Date(dateString);
+  let edad = hoy.getFullYear() - fechaNacimiento.getFullYear();
+  let diferenciaMeses = hoy.getMonth() - fechaNacimiento.getMonth();
+  if (diferenciaMeses < 0 || (diferenciaMeses === 0 && hoy.getDate() < fechaNacimiento.getDate())) {
+    edad--;
   }
-  return edad.valueOf()
+  return edad.valueOf();
 }
 
-let edad = String(getEdad("2000/12/27 00:00:00"))
+let edad = String(getEdad('2000/12/27 00:00:00'));
 
 /**
  * About section
@@ -129,7 +128,7 @@ export const aboutData: About = {
     {label: 'Nacionalidad', text: 'Española', Icon: FlagIcon},
     {label: 'Intereses', text: 'Automovilismo, baloncesto, videojuegos...', Icon: SparklesIcon},
     {label: 'Educación', text: 'Universidade de Santiago de Compostela', Icon: AcademicCapIcon},
-    {label: 'Empleo', text: 'Líder técnico en Vexiza S.L.', Icon: OfficeBuildingIcon},
+    {label: 'Empleo', text: 'Analista/Programador en Vexiza S.L.', Icon: OfficeBuildingIcon},
   ],
 };
 
@@ -159,7 +158,7 @@ export const skills: SkillGroup[] = [
       {
         name: 'Alemán',
         level: 3,
-      }
+      },
     ],
   },
   {
@@ -184,7 +183,7 @@ export const skills: SkillGroup[] = [
       {
         name: 'TypeScript',
         level: 7,
-      }
+      },
     ],
   },
   {
@@ -201,7 +200,7 @@ export const skills: SkillGroup[] = [
       {
         name: 'REST API',
         level: 10,
-      }
+      },
     ],
   },
   {
@@ -222,9 +221,9 @@ export const skills: SkillGroup[] = [
       {
         name: 'MySQL',
         level: 9,
-      }
+      },
     ],
-  }
+  },
 ];
 
 /**
@@ -233,37 +232,43 @@ export const skills: SkillGroup[] = [
 export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Clon de WhatsApp',
-    description: 'El proyecto es un clon de la aplicación de WhatsApp web. Esta página utiliza ReactJS como framework principal. El proyecto se ha construido utilizando ReactJs, React Context API y React Router. También he utilizado TailwindCSS para estilizar el proyecto, y FontAwesome para los iconos. El proyecto se encuentra alojado en Vercel. implementado con React.js y Tailwind CSS.',
+    description:
+      'El proyecto es un clon de la aplicación de WhatsApp web. Esta página utiliza ReactJS como framework principal. El proyecto se ha construido utilizando ReactJs, React Context API y React Router. También he utilizado TailwindCSS para estilizar el proyecto, y FontAwesome para los iconos. El proyecto se encuentra alojado en Vercel. implementado con React.js y Tailwind CSS.',
     url: 'https://pablito2199-whatsapp.vercel.app/',
     image: porfolioWhatsappClone,
   },
   {
     title: 'Herramienta para la creación y edición colaborativa de documentos, TFG',
-    description: 'Herramienta colaborativa para la creación y edición de documentos por parte de usuarios expertos en legislación a nivel gallego. Se trata de mi TFG, dirigido por personal del CiTIUS, donde se han utilizado tecnologías como React.js, Tailwind, Spring Boot, MongoDB, ...',
+    description:
+      'Herramienta colaborativa para la creación y edición de documentos por parte de usuarios expertos en legislación a nivel gallego. Se trata de mi TFG, dirigido por personal del CiTIUS, donde se han utilizado tecnologías como React.js, Tailwind, Spring Boot, MongoDB, ...',
     url: 'https://github.com/pablito2199/TFG',
     image: porfolioTFG,
   },
   {
     title: 'Watch.it',
-    description: 'Red social temática elaborada durante las clases de Ingeniería de Servicios en la universidad. Se pueden crear usuarios y respectivas amistades, así como películas y valoraciones de estas.',
+    description:
+      'Red social temática elaborada durante las clases de Ingeniería de Servicios en la universidad. Se pueden crear usuarios y respectivas amistades, así como películas y valoraciones de estas.',
     url: 'https://github.com/pablito2199/Watch.it',
     image: porfolioWatchIt,
   },
   {
     title: 'Find a coach',
-    description: 'Aplicación que permite el registro/inicio de sesión de usuarios, registrar entrenadores, filtrar entrenadores, enviar solicitudes de contacto y ver solicitudes de contacto personales. Se ha realizado con Vue 3 y Vuex, utilizando Firebase como base de datos y autenticación.',
+    description:
+      'Aplicación que permite el registro/inicio de sesión de usuarios, registrar entrenadores, filtrar entrenadores, enviar solicitudes de contacto y ver solicitudes de contacto personales. Se ha realizado con Vue 3 y Vuex, utilizando Firebase como base de datos y autenticación.',
     url: 'https://pablito2199-find-a-coach.vercel.app/',
     image: portfolioFindACoach,
   },
   {
     title: 'Gestión de una red de ambulatorios',
-    description: 'Aplicación de gestión de una base de datos de un ambulatorio para la asignatura de BDII del GrEI de la USC.',
+    description:
+      'Aplicación de gestión de una base de datos de un ambulatorio para la asignatura de BDII del GrEI de la USC.',
     url: 'https://github.com/pablito2199/BDII-Ambulatorioe',
     image: porfolioRedAmbulatorios,
   },
   {
     title: 'Programación multinúcleo SIMD',
-    description: 'Programación multinúcleo, y mediante instrucciones en OpenMP y AVX, para realizar operaciones entre cuaterniones. Proyecto de la asignatura de Arquitectura de Computadores.',
+    description:
+      'Programación multinúcleo, y mediante instrucciones en OpenMP y AVX, para realizar operaciones entre cuaterniones. Proyecto de la asignatura de Arquitectura de Computadores.',
     url: 'https://github.com/pablito2199/Programacion-Multinucleo-SIMD',
     image: porfolioMultinucleo,
   },
@@ -275,22 +280,25 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'Monopoly',
-    description: 'Monopoly realizado mediante Programación Orientada a Objetos en la asignatura de Programación Orientada a Objetos.',
+    description:
+      'Monopoly realizado mediante Programación Orientada a Objetos en la asignatura de Programación Orientada a Objetos.',
     url: 'https://github.com/pablito2199/Monopoly',
     image: porfolioMonopoly,
   },
   {
     title: 'Whatsapp Message Counter',
-    description: 'Este script te permite saber el número de mensajes enviados por los miembros de un chat. Solo tienes que exportar la conversación a un archivo en formato .txt y ejecutar el script.',
+    description:
+      'Este script te permite saber el número de mensajes enviados por los miembros de un chat. Solo tienes que exportar la conversación a un archivo en formato .txt y ejecutar el script.',
     url: 'https://github.com/pablito2199/WhatsApp-Message-Counter',
     image: porfolioWhatsappCounter,
   },
   {
-    title: 'Series\' Formatter',
-    description: 'Formatea el nombre de tus series en según el orden y la temporada. Solamente has de ordenador los archivos en tu carpeta y ejecutar el script.',
+    title: "Series' Formatter",
+    description:
+      'Formatea el nombre de tus series en según el orden y la temporada. Solamente has de ordenador los archivos en tu carpeta y ejecutar el script.',
     url: 'https://github.com/pablito2199/Series-Formatter',
     image: porfolioSeriesFormatter,
-  }
+  },
 ];
 
 /**
@@ -301,33 +309,65 @@ export const experience: TimelineItem[] = [
     date: 'Octubre 2022 - Presente',
     time: '',
     location: 'Vexiza S.L.',
-    title: 'Líder técnico - Analista/Programador - Desarrollador FullStack',
-    content: <div>
-        <p>En mi etapa como desarrollador Junior y FullStack participé en el desarrollo de TERREC, una aplicación destinada a la AMTEGA para la gestión del parcelario a nivel gallego. El objetivo ha sido unificar en una misma aplicación la gestión de aldeas modelo, polígonos agroforestales, investigaciones de titularidad, etc. La gestión de estas incluye la visión y modificación en mapa mediante capas y servicios GIS.</p>
-        <br/>
-        <p>En cuanto a tecnologías, se ha utilizado SpringBoot con una base de datos OracleSQL en el backend, y jQuery/JavaScript para el frontend, utilizando ArcGis para el control de GIS. Además, se han realizado despliegues de forma autónoma en Jenkins y se ha trabajado con JUnit para realizar tests. Con respecto a control de versiones, se ha utilizado SVN.</p>
-        <br/>
-        <p>En esta aplicación también se han realizado integraciones con otras APIs, como las de Catastro, ARPAD, Notifica.gal, PortaSinaturas o Sede electrónica de la Xunta.</p>
-        <br/>
-        <p>Una vez accedo al puesto de líder técnico me encargo de la dirección desde la parte técnica de dos proyectos: TERREC y XALEA, un proyecto heredado debido a haber ganado una licitación. Este último se encarga de gestionar el reparto de ayudas LEADER en los Grupos de Desarrollo Rural junto con Agader. Además de todos los puntos que he tocado en la aplicación de TERREC, destaco la evolución en este proyecto de cara al uso de buenas prácticas, análisis de riesgos, gestión de tareas dentro del equipo y las múltiples reuniones establecidas con el cliente con el fin de obtención de datos para el desarrollo de la aplicación.</p>
-    </div>,
+    title: 'Líder técnico - Analista/Programador',
+    content: (
+      <div>
+        <p>
+          En mi etapa como desarrollador Junior y FullStack participé en el desarrollo de TERREC, una aplicación
+          destinada a la AMTEGA para la gestión del parcelario a nivel gallego. El objetivo ha sido unificar en una
+          misma aplicación la gestión de aldeas modelo, polígonos agroforestales, investigaciones de titularidad, etc.
+          La gestión de estas incluye la visión y modificación en mapa mediante capas y servicios GIS.
+        </p>
+        <br />
+        <p>
+          En cuanto a tecnologías, se ha utilizado SpringBoot con una base de datos OracleSQL en el backend, y
+          jQuery/JavaScript para el frontend, utilizando ArcGis para el control de GIS. Además, se han realizado
+          despliegues de forma autónoma en Jenkins y se ha trabajado con JUnit para realizar tests. Con respecto a
+          control de versiones, se ha utilizado SVN.
+        </p>
+        <br />
+        <p>
+          En esta aplicación también se han realizado integraciones con otras APIs, como las de Catastro, ARPAD,
+          Notifica.gal, PortaSinaturas o Sede electrónica de la Xunta.
+        </p>
+        <br />
+        <p>
+          Una vez accedo al puesto de líder técnico me encargo de la dirección desde la parte técnica de dos proyectos:
+          TERREC y XALEA, un proyecto heredado debido a haber ganado una licitación. Este último se encarga de gestionar
+          el reparto de ayudas LEADER en los Grupos de Desarrollo Rural junto con Agader. Además de todos los puntos que
+          he tocado en la aplicación de TERREC, destaco la evolución en este proyecto de cara al uso de buenas
+          prácticas, análisis de riesgos, gestión de tareas dentro del equipo y las múltiples reuniones establecidas con
+          el cliente con el fin de obtención de datos para el desarrollo de la aplicación.
+        </p>
+      </div>
+    ),
     image: resumeVexiza,
     credencial: '',
-    url: 'https://www.vexiza.com/'
+    url: 'https://www.vexiza.com/',
   },
   {
     date: 'Julio 2021 - Agosto 2021',
     time: '(2 meses)',
     location: 'Bahía Software',
     title: 'Desarrollador de Backend - en prácticas',
-    content: <div>
-        <p>El proyecto en el que se ha colaborado recibe el nombre de INQUI, un proyecto encargado de la monitorización de los procesos informáticos (tales como el HIS – Sistema de Información Hospitalario, LIS – Sistema de Información de Laboratorio, etc.) de los hospitales de Quirón Salud.</p>
-        <br/>
-        <p>De esta forma, me he podido familiarizar con el entorno Mirth Connect y la mensajería HL7 en un entorno de tipo sanitario. Las labores realizadas han sido en backend, gestionando también una base de datos de tipo MySQL. En cuanto a ingeniería de software, se ha utilizado una metodología Agile y Scrum.</p>
-    </div>,
+    content: (
+      <div>
+        <p>
+          El proyecto en el que se ha colaborado recibe el nombre de INQUI, un proyecto encargado de la monitorización
+          de los procesos informáticos (tales como el HIS – Sistema de Información Hospitalario, LIS – Sistema de
+          Información de Laboratorio, etc.) de los hospitales de Quirón Salud.
+        </p>
+        <br />
+        <p>
+          De esta forma, me he podido familiarizar con el entorno Mirth Connect y la mensajería HL7 en un entorno de
+          tipo sanitario. Las labores realizadas han sido en backend, gestionando también una base de datos de tipo
+          MySQL. En cuanto a ingeniería de software, se ha utilizado una metodología Agile y Scrum.
+        </p>
+      </div>
+    ),
     image: resumeBahia,
     credencial: '',
-    url: 'https://bahiasoftware.es/home'
+    url: 'https://bahiasoftware.es/home',
   },
 ];
 
@@ -337,29 +377,37 @@ export const education: TimelineItem[] = [
     time: '',
     location: 'Universidade de Santiago de Compostela',
     title: 'Grado en Ingeniería Informática',
-    content: <div className="ml-4">
-      Durante esta estancia universitaria me he formado en campos muy diversos, entre los que destacan:
-      <ul className="ml-4">
-        <li>• Programación (Java, C, Python)</li>
-        <li>• Gestión de bases de datos (SQL, MongoDB) y sincronización de estas con aplicaciones y páginas web (JDBC).</li>
-        <li>• Ingeniería de servicios (Spring Boot)</li>
-        <li>• Ingeniería web (HTML5, CSS3, JavaScript, jQuery, Servlets, React.js)</li>
-        <li>• Interacción persona-ordenador (usabilidad de aplicaciones y facilidad de uso de estas para los usuarios)</li>
-        <li>• Matemáticas: álgebra linear, cálculo numérico (SageMath), matemática discreta, lógica y estadística (R)</li>
-        <li>• Administración y gestión de sistemas y redes (C y Shell)</li>
-        <li>• Ingeniería de computadores</li>
-        <li>• Ingeniería del software</li>
-        <li>• Sistemas de información</li>
-        <li>• Sistemas inteligentes</li>
-        <li>• Sistemas basados en reglas (CLIPS, PROLOG)</li>
-        <li>• Organización y gestión empresarial</li>
-        <li>• Computación gráfica (C, C++)</li>
-        <li>• Computación en la nube (AWS Educate)</li>
-      </ul>
-    </div>,
+    content: (
+      <div className="ml-4">
+        Durante esta estancia universitaria me he formado en campos muy diversos, entre los que destacan:
+        <ul className="ml-4">
+          <li>• Programación (Java, C, Python)</li>
+          <li>
+            • Gestión de bases de datos (SQL, MongoDB) y sincronización de estas con aplicaciones y páginas web (JDBC).
+          </li>
+          <li>• Ingeniería de servicios (Spring Boot)</li>
+          <li>• Ingeniería web (HTML5, CSS3, JavaScript, jQuery, Servlets, React.js)</li>
+          <li>
+            • Interacción persona-ordenador (usabilidad de aplicaciones y facilidad de uso de estas para los usuarios)
+          </li>
+          <li>
+            • Matemáticas: álgebra linear, cálculo numérico (SageMath), matemática discreta, lógica y estadística (R)
+          </li>
+          <li>• Administración y gestión de sistemas y redes (C y Shell)</li>
+          <li>• Ingeniería de computadores</li>
+          <li>• Ingeniería del software</li>
+          <li>• Sistemas de información</li>
+          <li>• Sistemas inteligentes</li>
+          <li>• Sistemas basados en reglas (CLIPS, PROLOG)</li>
+          <li>• Organización y gestión empresarial</li>
+          <li>• Computación gráfica (C, C++)</li>
+          <li>• Computación en la nube (AWS Educate)</li>
+        </ul>
+      </div>
+    ),
     image: resumeUSC,
     credencial: '',
-    url: 'https://www.usc.gal/es/estudios/grados/ingenieria-arquitectura/grado-ingenieria-informatica-2aedicion'
+    url: 'https://www.usc.gal/es/estudios/grados/ingenieria-arquitectura/grado-ingenieria-informatica-2aedicion',
   },
   {
     date: 'Septiembre 2016 - Mayo 2018',
@@ -369,11 +417,21 @@ export const education: TimelineItem[] = [
     content: <p></p>,
     image: resumeOllosGrandes,
     credencial: '',
-    url: 'http://www.edu.xunta.gal/centros/iesollosgrandes/'
+    url: 'http://www.edu.xunta.gal/centros/iesollosgrandes/',
   },
 ];
 
 export const certificaciones: TimelineItem[] = [
+  {
+    date: 'Expedición abr. 2025',
+    time: '16h',
+    location: 'Scrum Manager',
+    title: 'Scrum Master Certified',
+    content: <p></p>,
+    image: resumeScrumManager,
+    credencial: '52008',
+    url: 'https://scrummanager.com/website/c/verify-cert.php?code=67ff71804d53a6.40019203',
+  },
   {
     date: 'Expedición oct. 2019 · Vencimiento: oct. 2029',
     time: '',
@@ -382,7 +440,7 @@ export const certificaciones: TimelineItem[] = [
     content: <p></p>,
     image: resumeDGT,
     credencial: '',
-    url: 'https://sede.dgt.gob.es/es/permisos-de-conducir/obtencion-renovacion-duplicados-permiso/permiso-conducir/examen-maniobras/permiso-b.shtml'
+    url: 'https://sede.dgt.gob.es/es/permisos-de-conducir/obtencion-renovacion-duplicados-permiso/permiso-conducir/examen-maniobras/permiso-b.shtml',
   },
   {
     date: 'Expedición: jul. 2017 · Sin fecha de vencimiento',
@@ -392,7 +450,7 @@ export const certificaciones: TimelineItem[] = [
     content: <p></p>,
     image: resumeCambridge,
     credencial: '',
-    url: 'https://www.cambridgeenglish.org/es/exams-and-tests/first/'
+    url: 'https://www.cambridgeenglish.org/es/exams-and-tests/first/',
   },
   {
     date: 'Expedición: dic. 2014 · Sin fecha de vencimiento',
@@ -402,7 +460,7 @@ export const certificaciones: TimelineItem[] = [
     content: <p></p>,
     image: resumeCambridge,
     credencial: '',
-    url: 'https://www.cambridgeenglish.org/es/exams-and-tests/preliminary/'
+    url: 'https://www.cambridgeenglish.org/es/exams-and-tests/preliminary/',
   },
   {
     date: 'Expedición: jun. 2018 · Sin fecha de vencimiento',
@@ -412,41 +470,41 @@ export const certificaciones: TimelineItem[] = [
     content: <p></p>,
     image: resumeXunta,
     credencial: '',
-    url: 'https://www.lingua.gal/o-galego/aprendelo/celga-4/validacion'
-  }
+    url: 'https://www.lingua.gal/o-galego/aprendelo/celga-4/validacion',
+  },
 ];
 
 export const cursos: TimelineItem[] = [
-    {
-        date: '2023',
-        time: '(32 horas)',
-        location: 'Udemy',
-        title: 'Vue - The Complete Guide (incl. Router & Composition API)',
-        content: <p></p>,
-        image: resumeUdemy,
-        credencial: 'UC-4a97ea3d-fba4-4621-b4ae-e33b3cfff9c2',
-        url: 'https://www.udemy.com/certificate/UC-4a97ea3d-fba4-4621-b4ae-e33b3cfff9c2/'
-    },
-    {
-        date: '2023',
-        time: '(13.5 horas)',
-        location: 'Udemy',
-        title: 'Curso Completo de Bases de datos MongoDB y NoSQL',
-        content: <p></p>,
-        image: resumeUdemy,
-        credencial: 'UC-d9cc0c28-13a1-4e1d-aa80-69b180dec946',
-        url: 'https://www.udemy.com/certificate/UC-d9cc0c28-13a1-4e1d-aa80-69b180dec946/'
-    },
-    {
-        date: '2018',
-        time: '(31 horas), Nota: 9.7/10',
-        location: 'Universidade de Santiago de Compostela',
-        title: 'Curso de Competencias en Información (Básico)',
-        content: <p></p>,
-        image: resumeUSC,
-        credencial: 'BUSC.1819.41',
-        url: 'https://rebusca.usc.gal/guia-curso-competencias-basico/informacion'
-    }
+  {
+    date: '2023',
+    time: '(32 horas)',
+    location: 'Udemy',
+    title: 'Vue - The Complete Guide (incl. Router & Composition API)',
+    content: <p></p>,
+    image: resumeUdemy,
+    credencial: 'UC-4a97ea3d-fba4-4621-b4ae-e33b3cfff9c2',
+    url: 'https://www.udemy.com/certificate/UC-4a97ea3d-fba4-4621-b4ae-e33b3cfff9c2/',
+  },
+  {
+    date: '2023',
+    time: '(13.5 horas)',
+    location: 'Udemy',
+    title: 'Curso Completo de Bases de datos MongoDB y NoSQL',
+    content: <p></p>,
+    image: resumeUdemy,
+    credencial: 'UC-d9cc0c28-13a1-4e1d-aa80-69b180dec946',
+    url: 'https://www.udemy.com/certificate/UC-d9cc0c28-13a1-4e1d-aa80-69b180dec946/',
+  },
+  {
+    date: '2018',
+    time: '(31 horas), Nota: 9.7/10',
+    location: 'Universidade de Santiago de Compostela',
+    title: 'Curso de Competencias en Información (Básico)',
+    content: <p></p>,
+    image: resumeUSC,
+    credencial: 'BUSC.1819.41',
+    url: 'https://rebusca.usc.gal/guia-curso-competencias-basico/informacion',
+  },
 ];
 
 /**
@@ -486,5 +544,5 @@ export const contact: ContactSection = {
 export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/pablito2199'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/pablo-tarr%C3%ADo-otero-806b52204/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/pablito_tarrio'}
+  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/pablito_tarrio'},
 ];
